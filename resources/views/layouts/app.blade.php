@@ -10,6 +10,21 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+      <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-social.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/vendor/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="/assets/vendor/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/assets/vendor/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/assets/vendor/css/skin-purple.min.css">
+    <link rel="stylesheet" href="/assets/vendor/css/toastr.min.css">
+    <link rel="stylesheet" href="/assets/vendor/css/jcrop.min.css" >
+    <link rel="stylesheet" href="/assets/vendor/css/select.min.css" >
+
+
+    <!-- Externo -->
+     <script src="/assets/vendor/js/jquery.min.js"></script>
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -43,7 +58,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('login') }}">Login @{{1+1}}</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
@@ -76,5 +91,25 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Scripts -->
+    <script src="/assets/js/menu.js"></script>
+
+    <script src="/assets/vendor/js/angular.js"></script>
+    <script src="/assets/vendor/js/angular-sanitize.min.js"></script>
+    <script src="/assets/vendor/js/angular-locale_pt-br.js"></script>
+    <script src="/assets/vendor/js/ui-bootstrap-tpls.min.js"></script>
+    <script src="/assets/vendor/js/ng-file-upload.min.js"></script>
+    <script src="/assets/vendor/js/select.min.js"></script>
+    <script src="/assets/vendor/js/admin_lte.min.js"></script>
+    <script src="/assets/vendor/js/toastr.min.js"></script>
+    <script src="/assets/vendor/js/Chart.min.js"></script>
+    <script src="/assets/vendor/js/jcrop.min.js"></script>
+    <script src="/assets/js/config.js"></script>
+    <script src="/assets/vendor/js/dutils-angular-config.js"></script>
+    <script src="/assets/vendor/js/dutils-angular-directives.js"></script>
+    <script src="/assets/vendor/js/dutils-common.js"></script>
+    <script src="/assets/vendor/js/jscolor.js"></script>
+    <script src="/assets/vendor/js/imagezoom.js"></script>
+    <script src="/assets/vendor/js/jquery.flexslider.js"></script>
 </body>
 </html>
