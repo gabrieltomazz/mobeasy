@@ -1,8 +1,9 @@
 @extends('layouts.logged')
 
 @section('content')
+
 <div class="container" ng-controller="DashboardController">
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard @{{1+1}}</div>
@@ -18,6 +19,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    {!! $map['html'] !!}
+
 </div>
 @endsection

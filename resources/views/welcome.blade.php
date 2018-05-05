@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <style>
+        <!-- <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -62,10 +62,13 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+        </style> -->
+        {!! $map['js'] !!}
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+
+         {!! $map['html'] !!}
+        <!-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -90,6 +93,6 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
