@@ -37,6 +37,43 @@ Route::get('/', function () {
     return view('welcome')->with('map',$map);
 });
 
+Route::get('/way', function () {
+
+    //$config = array();
+    $config['center'] = 'Distrito Federal, BR';
+    $config['zoom'] = '14';
+    $config['map_height'] = '300px';
+    $config['map_width'] =  '500px';
+
+    $config['scrollwheel'] = false;
+
+    $config['directions'] =  true;
+    $config['directionsStart'] = "Asa Norte SQN 206 - Asa Norte, Brasília - DF";
+    $config['directionsEnd'] = "Rua 35 Sul, Residencial Sevilla - Águas Claras, Brasília - DF";
+    $config['directionsDivId'] =  'directionsDivId';
+    
+    GMaps::initialize($config);
+
+    //addmarker
+    $marker['position'] = 'Rodoviária do Plano Piloto - Eixo Rodoviário de Brasília - Brasília, DF';
+    $marker['infowindow_content'] = '1 - Rodoviária do Plano Piloto!';
+    $marker['icon'] = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=A|9999FF|000000';
+    
+    GMaps::add_marker($marker);
+
+    $marker2['position'] = 'Restaurante dos 13, Colônia Agrícola Samambaia - Taguatinga, Brasília - DF';
+    $marker2['infowindow_content'] = '2 - Estação Concessionarias!';
+    $marker2['icon'] = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=A|9999FF|000000';
+    
+
+    GMaps::add_marker($marker2);
+
+
+    $map = GMaps::create_map();
+
+    return view('way')->with('map',$map);
+});
+
 Auth::routes();
 // Route::get('/home', function () {
 

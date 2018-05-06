@@ -1,7 +1,7 @@
 @extends('layouts.logged')
 
 @section('content')
-<div class="container" >
+<div class="container" ng-controller="DashboardController">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-primary" >
@@ -61,15 +61,15 @@
                                 </div>
                                 <div class="col-sm-4 col-xs-3">
                                     <img src="assets/img/icones/bike.png" style="border:0px;margin: 0 35px 20px 0;float:left;" alt="run" width="50" height="50">
-                                    <p class="margin-top-20" style="font-size:82%;"><b>Bike Share:</b> 20 minutos <b>Custo:  </b>  R$10.0   0</p>
+                                    <p class="margin-top-20" style="font-size:82%;"><b>Bike Share:</b> 15 minutos <b>Custo:  </b>  R$10.00</p>
                                 </div>
                                 <div class="col-sm-4 col-xs-3">
                                     <img src="assets/img/icones/subway.png" style="border:0px;margin: 0 35px 20px 0;float:left;" alt="run" width="50" height="50">
-                                    <p class="margin-top-20" style="font-size:82%;"><b>Linha :     </b>SUL-SD <b>Tempo: </b> 25 minutos <b>Custo:  </b>  R$5.00</p>
+                                    <p class="margin-top-20" style="font-size:82%;"><b>Linha :     </b>Central-Smb <b>Tempo: </b> 52 minutos <b>Custo:  </b>  R$5.00</p>
                                 </div>
                                 <div class="col-sm-4 col-xs-3">
                                     <img src="assets/img/icones/car.png" style="border:0px;margin: 0 35px 20px 0;float:left;" alt="run" width="50" height="50">
-                                    <p class="margin-top-20" style="font-size:75%;" ><b>Car Sharing:</b> 10 min <b> Tempo: </b> 15 minutos <b>Custo:  </b>  R$12.50 </p>
+                                    <p class="margin-top-20" style="font-size:75%;" ><b>Car Sharing:</b><b> Tempo: </b> 10 minutos <b>Custo:  </b>  R$12.00 </p>
                                 </div>
 
                             </div>
@@ -109,9 +109,9 @@
                                             <label for="servico" class="control-label">Serviço</label> 
                                         
                                             <select id = "servico" class = "form-control" ng-model = "servico" required autofocus>
-                                                <option ng-value ="1" >Pool   - R$ 12 - 10 min</option>
-                                                <option ng-value ="2" >Uber X - R$ 18 - 4 min</option>
-                                                <option ng-value ="6" >Black  - R$ 32 - 8 min</option>
+                                                <option ng-value ="1" >Pool   - R$ 8 - 10 min</option>
+                                                <option ng-value ="2" >Uber X - R$ 12 - 4 min</option>
+                                                <option ng-value ="6" >Black  - R$ 20 - 8 min</option>
                                             </select>
                                         </div>   
                                     </div>
@@ -121,7 +121,7 @@
                     </div>
 
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-primary" data-dismiss="modal" href="" >Escolher</button>
+                      <a type="button" class="btn btn-primary" data-dismiss="modal" ng-click="redirect()" >Escolher</a>
                     </div>
                   </div>
                   

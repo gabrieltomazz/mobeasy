@@ -1,16 +1,25 @@
 @extends('layouts.logged')
 
+
+<head>
+    <style>
+        html, body {
+            background-image: url(assets/img/dash.png);
+            
+        }
+    </style>
+</head>    
 @section('content')
 <div class="container" ng-controller="DashboardController" >
     <div class="row">
         <div class="col-md-8 ">
-            <div class="panel panel-primary" >
+            <div class="panel panel-primary" style="background: none;" >
 
-                <div class="panel-body" >
+                <div class="panel-body" style="background: rgba(122, 130, 136, 0.2)!important;" >
                     <div class="form-horizontal" >
                         
                         <div class="form-group">
-                            <label for="origem" class="col-md-4 control-label">Origem:</label>
+                            <label for="origem" class="col-md-4 control-label" style="color: #3097b2">Origem:</label>
 
                             <div class="col-md-6">
                                 <input id="myPlaceTextBox" type="text" class="form-control" name="origem"
@@ -20,7 +29,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="destino" class="col-md-4 control-label">Destino: </label>
+                            <label for="destino" class="col-md-4 control-label" style="color: #3097b2">Destino: </label>
 
                             <div class="col-md-6">
                                 <input id="objeto_pesquisa" type="text" class="form-control" name="destino" ng-model="instance.destino"
@@ -29,7 +38,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="destino" class="col-md-4 control-label"><h4 style="color:blue"> Eu prefiro: </h4></label>
+                            <label for="destino" class="col-md-4 control-label"><h4 style="color: #3097b2"> Eu prefiro: </h4></label>
                         </div>
                         <div class=" container form-group">
                             <label class="checkbox-inline">
@@ -50,7 +59,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="destino" class="col-md-4 control-label"><h4 style="color:blue"> Outros Filtros: </h4></label>
+                            <label for="destino" class="col-md-4 control-label"><h4 style="color: #3097b2"> Outros Filtros: </h4></label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="melhor_tempo">
@@ -69,13 +78,13 @@
                 </div>
             </div>   
         </div>
-        <div class="row">
+        <div class="row container">
             <div class="form-group">
                 <div class = "col-md-2" >
                    <!--  <button style="float: right;" type="submit" class="btn btn-primary" href="/choose">
                         Vamos
                     </button> -->
-                    <a type="button" style="float: right;" class="btn btn-primary"  href = "/choose"> Vamos</a>
+                    <a type="button" style="float: left;" class="btn btn-primary"  href = "/choose"> Vamos</a>
                 </div>
             </div>
         </div>

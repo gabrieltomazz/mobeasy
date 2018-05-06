@@ -1,6 +1,12 @@
 app.controller("DashboardController", ['$scope','$http','$window','$timeout', function ($scope, $http,$window,$timeout) {
 
-	
+	$scope.rating = false;
+	$scope.part1 = false;
+	$scope.part2 = false;
+	$scope.part3 = false;
+	$scope.part4 = false;
+	$scope.part5 = false;
+
 	$scope.cities =$scope.cities = [
 'Asa Sul SQS 407 - Asa Sul, Brasília - DF',
 'Asa Sul SQS 409 - Asa Sul, Brasília - DF',
@@ -52,22 +58,48 @@ app.controller("DashboardController", ['$scope','$http','$window','$timeout', fu
 'Setor Sudoeste SQSW 103 - Cruzeiro / Sudoeste / Octogonal, Brasília - DF',
 'Setor Sudoeste SQSW 106 - Cruzeiro / Sudoeste / Octogonal, Brasília - DF',
 'Aeroporto Internacional de Brasília (BSB) - Lago Sul, Brasília - DF',
-'Setor de Habitações Individuais Norte CA 7 Indie Warehouse Coworking - Lago Norte, Brasília - DF'];
+'Setor de Habitações Individuais Norte CA 7 Indie Warehouse Coworking - Lago Norte, Brasília - DF',
+'Rua 35 Sul, Residencial Sevilla - Águas Claras, Brasília - DF'];
 	
 
-	// $scope.find = function(id){
+	$scope.redirect = function(){
 
- //        loadingCenter("pageContent",true);
- //        $scope.findProject(id);
- //        $http.get('/criterions/find/'+id).then(function (response) {
-     
+        $window.location.href = '/checkout';
+  	};
 
- //        }, function (response) {
- //        }).finally(function(){
- //          loadingCenter("pageContent",false);
- //        });
- //  };
+  	$scope.redirect2 = function(){
 
+        $window.location.href = '/way';
+  	};
+  	$timeout(function(){
+    	$scope.part1 = true;
+
+  	},2000);
+  	$timeout(function(){
+    	$scope.part2 = true;
+
+  	},3000);
+  	$timeout(function(){
+    	$scope.part3 = true;
+
+  	},4000);
+  	$timeout(function(){
+    	$scope.part4= true;
+
+  	},5000);
+  	$timeout(function(){
+    	$scope.part5 = true;
+
+  	},6000);
+  	$timeout(function(){
+    	$scope.part6 = true;
+
+  	},7000);
+
+  	$timeout(function(){
+    	$scope.rating = true;
+
+  	},8000);
  
 
 }]);
