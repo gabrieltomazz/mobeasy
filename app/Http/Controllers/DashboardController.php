@@ -38,5 +38,9 @@ class DashboardController extends Controller
 	{
 		return view('checkout');
 	}
+	public function googlemaps()
+	{
+		return view('googlemaps');
+	}
 
 }
