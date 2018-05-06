@@ -14,7 +14,7 @@
 
                             <div class="col-md-6">
                                 <input id="myPlaceTextBox" type="text" class="form-control" name="origem"
-                                uib-typeahead="city for city in cities | filter:$viewValue" class="form-control" ng-model="instance.origem">
+                                uib-typeahead="city for city in cities | filter:$viewValue | limitTo:8" class="form-control" ng-model="instance.origem">
 
                             </div>
                         </div>
@@ -24,7 +24,7 @@
 
                             <div class="col-md-6">
                                 <input id="objeto_pesquisa" type="text" class="form-control" name="destino" ng-model="instance.destino"
-                                 uib-typeahead="city for city in cities | filter:$viewValue " class="form-control" ng-model="instance.destino">
+                                 uib-typeahead="city for city in cities | filter:$viewValue | limitTo:8 " class="form-control" ng-model="instance.destino">
                             </div>
                         </div>
 
@@ -45,7 +45,7 @@
                                 <input type="checkbox" value="">Cabify
                             </label>
                             <label class="checkbox-inline">
-                                <input type="checkbox" value="">Onibus
+                                <input type="checkbox" value="">Ônibus
                             </label>
                         </div>
 
@@ -72,9 +72,10 @@
         <div class="row">
             <div class="form-group">
                 <div class = "col-md-2" >
-                    <button style="float: right;" type="submit" class="btn btn-primary" >
+                   <!--  <button style="float: right;" type="submit" class="btn btn-primary" href="/choose">
                         Vamos
-                    </button>
+                    </button> -->
+                    <a type="button" style="float: right;" class="btn btn-primary"  href = "/choose"> Vamos</a>
                 </div>
             </div>
         </div>

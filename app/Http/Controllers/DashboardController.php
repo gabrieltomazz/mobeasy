@@ -31,7 +31,7 @@ class DashboardController extends Controller
 	}
 	public function chooses()
 	{
-		
+		return view('choose_root');
 	}
 
 }
