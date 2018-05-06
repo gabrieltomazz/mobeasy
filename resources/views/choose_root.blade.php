@@ -10,10 +10,10 @@
                 
                 <div class="panel-body" >
                     <div class=" row">
-                        <label for="origem" class="col-md-4 control-label">Origem:</label> Asa Sul SQS 406 - Asa Sul
+                        <label for="origem" class="col-md-4 control-label">Origem:</label>Asa Norte SQN 206 - Asa Norte 
                     </div>
                     <div class="row">
-                        <label for="destino" class="col-md-4 control-label">Destino:</label>UnB - Brasília, DF 
+                        <label for="destino" class="col-md-4 control-label">Destino:</label>Rua 35 Sul, Residencial Sevilla - Águas Claras
                     </div>
                 </div>
             </div>
