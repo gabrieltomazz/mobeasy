@@ -4,7 +4,9 @@
 <head>
     <style>
         html, body {
-            background-image: url(assets/img/dash.png);
+            background-image: url(assets/img/bolinha.png);
+            background-repeat: no-repeat;
+            background-size: auto;
             
         }
     </style>
@@ -40,22 +42,24 @@
                         <div class="form-group">
                             <label for="destino" class="col-md-4 control-label"><h4 style="color: #3097b2"> Eu prefiro: </h4></label>
                         </div>
-                        <div class=" container form-group">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="">Bike
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="">Metro
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="">Uber
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="">Cabify
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="">Ônibus
-                            </label>
+                        <div class=" container">
+                            <div class="form-group">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Bike
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Metro
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Uber
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Cabify
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="">Ônibus
+                                </label>
+                            </div>    
                         </div>
 
                         <div class="form-group">
