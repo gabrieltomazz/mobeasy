@@ -42,9 +42,11 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                   <!--  <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
-                    </a>
+                    </a> -->
+                    <img src="assets/img/logo2.png" style="display: block;margin: 0 auto;" alt="logo2" width="55" height="40">
+                
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse" >
@@ -81,31 +83,6 @@
                                             {{ csrf_field() }}
                                 </form>
                             </li>
-
-                            <!-- <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="">
-                                            Account
-                                        </a>
-                                        <a href="/" role="button" >
-                                            Settings</span>
-                                        </a>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li> -->
 
                         @endguest
                     </ul>
