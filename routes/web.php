@@ -18,13 +18,12 @@
 Route::get('/', function () {
 
 	//$config = array();
-    $config['center'] = 'New York, USA';
+    $config['center'] = 'Brasilia, BR';
     $config['zoom'] = '14';
     $config['map_height'] = '500px';
     //$config['map_width'] = '500px';
     $config['scrollwheel'] = false;
     
-    GMaps::initialize($config);
     GMaps::initialize($config);
 
     $map = GMaps::create_map();

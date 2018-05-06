@@ -129,7 +129,7 @@
     <script src="/assets/vendor/js/toastr.min.js"></script>
     <script src="/assets/vendor/js/Chart.min.js"></script> 
     <script src="/assets/vendor/js/jcrop.min.js"></script>
-     <script src="/assets/js/config.js"></script>
+    <script src="/assets/js/config.js"></script>
     <script src="/assets/vendor/js/dutils-angular-config.js"></script>
     <script src="/assets/vendor/js/dutils-angular-directives.js"></script> 
     <script src="/assets/vendor/js/dutils-common.js"></script>
