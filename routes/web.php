@@ -64,3 +64,4 @@ Auth::routes();
 // });
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/choose', 'DashboardController@chooses')->name('chooses');
+Route::get('/checkout', 'DashboardController@checkout')->name('checkout');

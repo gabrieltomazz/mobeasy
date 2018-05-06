@@ -34,4 +34,9 @@ class DashboardController extends Controller
 		return view('choose_root');
 	}
 
+	public function checkout()
+	{
+		return view('checkout');
+	}
+
 }
